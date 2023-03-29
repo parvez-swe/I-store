@@ -6,7 +6,7 @@ import ProductCart from "./ProductCart";
 const FeatureProduct = () => {
   return (
     <>
-      <div>
+      <div className="flex flex-row flex-wrap justify-center">
         {products.map((product) => (
           <ProductCart
             name={product.name}
