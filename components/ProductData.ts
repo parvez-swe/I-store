@@ -66,22 +66,35 @@ In Bangladesh, you can get the original Motorola Moto G31 From Star Tech. We hav
     price: 13,
     quantity: 5,
   },
-  //   {
-  //     image: "/product/prod2.webp",
-  //     name: "Pant",
-  //     id: "f3w3",
-  //     description:
-  //       "This shirt is a perfect blend of style and comfort, making it a must-have in your wardrobe. It's made from high-quality, breathable fabric that's soft to the touch, ensuring you feel great all day long. The shirt features a classic design with a modern twist, making it versatile enough to wear to any occasion, whether it's a casual day out or a formal event. The fitted cut creates a flattering silhouette, while the durable stitching ensures long-lasting wear. Available in a range of sizes and colors, this shirt is sure to become a staple in your wardrobe for years to come",
-  //     price: 13,
-  //     quantity: 5,
-  //   },
-  //   {
-  //     image: "/product/prod2.webp",
-  //     name: "Pant",
-  //     id: "ser8hf",
-  //     description:
-  //       "This shirt is a perfect blend of style and comfort, making it a must-have in your wardrobe. It's made from high-quality, breathable fabric that's soft to the touch, ensuring you feel great all day long. The shirt features a classic design with a modern twist, making it versatile enough to wear to any occasion, whether it's a casual day out or a formal event. The fitted cut creates a flattering silhouette, while the durable stitching ensures long-lasting wear. Available in a range of sizes and colors, this shirt is sure to become a staple in your wardrobe for years to come",
-  //     price: 13,
-  //     quantity: 5,
-  //   },
+  {
+    image: [
+      "/products/laptop1.webp",
+      "/products/laptop11.webp",
+      "/products/laptop111.webp",
+      "/products/laptop1111.webp",
+      "/products/laptop11111.webp",
+    ],
+    name: `Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" FHD Laptop with DDR5 RAM`,
+    id: "f3w3",
+    description: `Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" FHD Laptop with DDR5 RAM
+The Lenovo IdeaPad 1 14AMN7 is a stylish and powerful laptop that offers high-performance computing for a variety of jobs. This laptop can perform complex programs with ease thanks to an AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz). The processor has four cores and eight threads, allowing you to multitask effectively and effortlessly. This laptop has 8GB DDR5-5500 Memory, which offers smooth performance even while running many apps at the same time. The 256 GB SSD PCIe offers plenty of storage capacity for your data, documents, and multimedia files. SSD technology enables rapid boot-up and load times, allowing you to complete your tasks quickly. The AMD Radeon 610M graphics provides exceptional graphics performance, making this laptop suitable for gaming and video editing. The 14-inch FHD (1920x1080) display provides clear and sharp graphics, letting you view high-quality entertainment without pixelation or blurring. This Lenovo IdeaPad 1 14AMN7 is a powerful and flexible laptop that can meet a variety of computing demands. Whether you're a student, professional, or gamer, this laptop is a dependable option that can manage your workload with ease.
+
+Buy Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" FHD Laptop with DDR5 RAM from the best Computer Shop in BD
+In Bangladesh, you can get the original Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" FHD Laptop from Star Tech. We have a large collection of the latest Lenovo Laptops to purchase. Order Online Or Visit your Nearest Star Tech Shop to get yours at the lowest price. The Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" FHD Laptop comes with  2 years warranty ( Battery adapter 1 year).`,
+    price: 13,
+    quantity: 5,
+  },
+  {
+    image: [
+      "/products/watch1.webp",
+      "/products/watch11.webp",
+      "/products/watch111.webp",
+    ],
+    name: `Havit HV-M9013 1.67" Full Touch Screen Smart Watch`,
+    id: "ser8hf",
+    description: `Havit HV-M9013 1.67" Full Touch Screen Smart Watch
+The Havit HV-M9013 features a 1.67-inch TFT full touch screen HD display for a better visual experience. The display area is larger, the screen-to-body ratio is higher, the frame is narrower, and the display effect is more delicate, providing you with high-quality touch, experiencing various other functions more easily. The built-in optical sensors combined with an intelligent AI algorithm keep all-day continuous tracking for heart rate. The Havit M9013 smartwatch with 8 different activity modes: walking, running, cycling, yoga, swimming, spinning, badminton, etc. The activity trackers can accurately record your sports data and all-day, such as pedometer, speed, active time. It comes with IP67 waterproof standard. You can wear it when washing hands, running in the rain, or even going swimming with it. It is powered by a 190mAh battery. The Havit HV-M9013 comes with a 1-year warranty,`,
+    price: 13,
+    quantity: 5,
+  },
 ];

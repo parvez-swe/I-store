@@ -6,8 +6,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItem = [
-  { name: "Home", id: 1, url: "" },
-  { name: "Laptop", id: 2, url: "" },
+  { name: "Home", id: 1, url: "/" },
+  { name: "Products", id: 2, url: "/products" },
+  { name: "Laptop", id: 2, url: "/laptop" },
+
   { name: "Mobile", id: 3, url: "" },
   { name: "Desktop", id: 4, url: "" },
   { name: "Blogs", id: 4, url: "" },
@@ -38,7 +40,7 @@ const TopBar = () => {
           )}
           {navItem.map((item) => (
             <li
-              key={item.url}
+              key={item.name}
               onClick={NavToggleHandler}
               className={`${
                 item.url === path ? "text-red-500" : ""
