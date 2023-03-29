@@ -6,6 +6,13 @@ export const products = [
       "/products/monitor111.jpg",
     ],
     name: `MSI Optix G241V E2 24" FHD FreeSync IPS Esports Gaming Monitor`,
+    keyFeature: [
+      "Model: Optix G241V E2",
+      "Resolution: FHD (1920 x 1080)",
+      "Display: IPS, 75Hz, 1ms",
+      "Ports: HDMI, 3.5mm Audio Out, DP",
+      "Features: Free Sync, Flicker Free",
+    ],
     id: "ser34",
     description: `MSI Optix G241V E2 24" FHD FreeSync IPS Esports Gaming Monitor
 MSI Optix G241V E2 comes with 24" FHD (1920 x 1080) display. This is one kind of FreeSync IPS Esports Gaming Monitor. Here, the IPS Panel helps to Optimize screen colors and brightness to enhance your viewing experience. This monitor featured with 75Hz Refresh Rate, which Respond faster with smoother frames and 1ms Response Time, it helps to Eliminate screen tearing and choppy frame rates and also AMD FreeSync Technology (Tear free) is available in this monitor. These type of games require very fast and precise movements, which an ultra-high refresh rate and fast response time monitor and you can enjoy artifact-free performance at virtually any framerate with AMD FreeSync technology. In this gaming monitor, Night Vision Smart black tuner to brighten your day by bringing out the fine details in dark areas. This Optix series MSI gaming monitors have more gamut coverage compared to general monitors. Gameplay colors and Its details will look more realistic and refined, pushing immersion to its limits. MSI Optix series gaming monitors offers several modes to choose from. Gamers can choose the mode based on the type of game played to experience the best visual effects. In this gaming monitro, the super narrow bezel procides you the best immersion possible in the latest games with a multi-monitor 180 degree setup. Enjoy better continuity between screens while playing games, working, or general computing. With the Frameless Design, you will enjoy the ultimate gaming experience with super narrow bezels. The Anti-Flicker and Less Blue Light gives your Game even longer and prevent eye strain and fatigue. In this gaming monitor, the 178Â° Wide Viewing Angle provides Colors and details will stay sharp at more angles. The new Optix monitors are optimized to produce less amount of blue light displayed by the monitor. The latest MSI Optix G241V E2 Gaming Monitor has 03 years warranty.`,
@@ -91,6 +98,12 @@ In Bangladesh, you can get the original Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" 
       "/products/watch111.webp",
     ],
     name: `Havit HV-M9013 1.67" Full Touch Screen Smart Watch`,
+    keyFeature: [
+      "Model: HV-M9013",
+      "IP67 Waterproof Rating",
+      "Multi-Functional Button",
+      "24 Hours Heart Rate Detection",
+    ],
     id: "ser8hf",
     description: `Havit HV-M9013 1.67" Full Touch Screen Smart Watch
 The Havit HV-M9013 features a 1.67-inch TFT full touch screen HD display for a better visual experience. The display area is larger, the screen-to-body ratio is higher, the frame is narrower, and the display effect is more delicate, providing you with high-quality touch, experiencing various other functions more easily. The built-in optical sensors combined with an intelligent AI algorithm keep all-day continuous tracking for heart rate. The Havit M9013 smartwatch with 8 different activity modes: walking, running, cycling, yoga, swimming, spinning, badminton, etc. The activity trackers can accurately record your sports data and all-day, such as pedometer, speed, active time. It comes with IP67 waterproof standard. You can wear it when washing hands, running in the rain, or even going swimming with it. It is powered by a 190mAh battery. The Havit HV-M9013 comes with a 1-year warranty,`,
