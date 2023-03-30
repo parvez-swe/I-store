@@ -50,7 +50,7 @@ const Slider = ({ images, autoplay, h }: SliderProps) => {
 
   return (
     <div
-      className={`max-w-[1400px] h-[250px] md:h-[480px] w-full m-auto pt-5  relative group mb-10 transition-all duration-1000`}
+      className={` max-w-[1400px] h-[250px] md:h-[480px] w-full m-auto pt-5  relative group mb-10 transition-all duration-1000`}
     >
       <div
         // key={images[currentIndex]}

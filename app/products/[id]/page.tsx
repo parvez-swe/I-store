@@ -4,7 +4,7 @@ import { products } from "@/components/ProductData";
 
 const page = () => {
   return (
-    <div>
+    <div className="">
       <ProuductDetails products={products} />
     </div>
   );

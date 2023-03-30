@@ -73,7 +73,7 @@ const page = () => {
           </div>
           <div className="py-2 text-center">
             <p className="text-slate-500"> You dont have an Account?</p>
-            <Link href="/login" className="border-b text-blue-800">
+            <Link href="/signup" className="border-b text-blue-800">
               Sign Up
             </Link>
           </div>

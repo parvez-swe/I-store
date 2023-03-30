@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { useState } from "react";
+// import { useState } from "react";
 
 const ProductCart = ({ name, id, price, image, description }: any) => {
   return (
@@ -19,7 +19,7 @@ const ProductCart = ({ name, id, price, image, description }: any) => {
         </div>
         <div className="flex justify-between px-1">
           <div>
-            <div className="w-full flex-none text-sm font-medium text-green-900 mt-2">
+            <div className="w-full flex-none text-sm font-medium text-green-600 mt-2">
               In stock
             </div>
           </div>
