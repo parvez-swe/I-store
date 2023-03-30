@@ -3,7 +3,7 @@ import React from "react";
 
 const OrderSummery = ({ conbtn }) => {
   return (
-    <div className="bg-white p-5 m-2 min-w-[380px]">
+    <div className="bg-white p-5 m-2 min-w-[320px]">
       <h1 className="text-2xl ">Order Summary</h1>
       <div className="flex justify-between">
         <p className="text-slate-500">Subtotal (2items)</p> <p>৳ 11,55</p>

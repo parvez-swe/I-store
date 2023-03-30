@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 const CartItem = ({ id, quantity }) => {
   return (
-    <div className="flex justify-between items-center bg-white m-2 p-2 rounded relative min-w-[390px]">
+    <div className="flex justify-between items-center bg-white m-2 p-2 rounded relative min-w-[320px]">
       <button
         // onClick={() => removeFromCart(id)}
         className=" absolute top-0 right-1 text-red-600"
