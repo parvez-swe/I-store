@@ -6,7 +6,7 @@ import ProductCart from "./ProductCart";
 const AllProducts = () => {
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center">
+      <div className="grid grid-cols-2 place-items-center md:flex flex-row flex-wrap justify-center">
         {products.map((product) => (
           <ProductCart
             name={product.name}

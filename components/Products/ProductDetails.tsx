@@ -6,6 +6,7 @@ import { BsStar, BsStarFill, BsHeart, BsHeartFill } from "react-icons/bs";
 import { AiFillLike, AiOutlineLike } from "react-icons/ai";
 // import { ProductData } from "../../../components/products/data";
 import Slider from "@/components/Slider/Slider";
+import DetailsSlider from "../Slider/DetailsSlider";
 
 const ProuductDetails = ({ products }: any) => {
   return (
@@ -13,7 +14,7 @@ const ProuductDetails = ({ products }: any) => {
       <div className="grid grid-cols-1 pb-20 md:grid-cols-2">
         <div className="bg-white mb-10 rounded-b-xl ">
           <div className="w-[100%] flex justify-center">
-            <Slider images={products[0].image} h={350} />
+            <DetailsSlider images={products[0].image} h={350} />
           </div>
         </div>
 

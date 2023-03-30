@@ -4,7 +4,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import Search from "../search/Search";
 const navItem = [
   { name: "Home", id: 1, url: "/" },
   { name: "Products", id: 2, url: "/products" },
@@ -23,10 +23,13 @@ const TopBar = () => {
   const path = usePathname();
   return (
     <div className="Navbar z-10 sticky top-0 px-[10px] md:px-[20px] lg:px-[10%] bg-[#081621] flex flex-row justify-between h-16 items-center pl-2">
-      <div className="text-xl font-bold md:px-0  text-white uppercase">
-        <Link href="/">I Store</Link>
+      <div className="md:px-0 flex-1 flex flex-row ">
+        <Link className="text-white uppercase text-xl font-bold " href="/">
+          I Store
+        </Link>
+        <Search />
       </div>
-      <div className="text-black">
+      <div className="text-black flex flex-row">
         <ul
           className={`${
             !showNav ? "-translate-x-[100%]" : "translate-x-0"
@@ -55,6 +58,15 @@ const TopBar = () => {
             </li>
           ))}
         </ul>
+
+        <Link href="/signup">
+          <button
+            type="submit"
+            className=" mx-2 text-centers text-sm  bg-blue-500 hover:bg-blue-700 text-white md:font-bold py-1 md:py-2 px-1 md:px-4 rounded"
+          >
+            SignUp
+          </button>
+        </Link>
         <div className="md:hidden">
           {!showNav && (
             <MdMenu
