@@ -25,7 +25,7 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-[100vh] py-10 bg-gray-100">
+    <div className="flex w-full md:w-3/5">
       <div className="bg-white p-8 rounded shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-8 text-center">Edit Profile</h2>
         <form onSubmit={handleSignup}>

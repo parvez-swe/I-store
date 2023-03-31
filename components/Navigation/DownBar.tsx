@@ -4,39 +4,52 @@ import Link from "next/link";
 import { BiHome, BiCategory, BiHeart, BiLogInCircle } from "react-icons/bi";
 import { MdOutlineAccountCircle, MdOutlineLocalOffer } from "react-icons/md";
 import { BsCart3 } from "react-icons/bs";
+import { usePathname } from "next/navigation";
 
 const DownBar = () => {
   const isAuthenticated = true;
   const cartQuantity = 15;
-
+  const path = usePathname();
+  const urls = "/";
+  const orls = "/offer";
   return (
     // <div className="fixed bottom-0 w-[100%] h-14 bg-white flex  justify-between items-center rounded-t-2xl text-2xl z-20 ">
     <>
       <Link
         href="/"
-        className={`mx-2 text-slate-500 md:text-white flex flex-col justify-center items-center active:text-[#FF7A00] `}
+        className={`${
+          path === "/" ? "text-[#FF7A00] " : "text-slate-500"
+        } mx-2  md:text-white flex flex-col justify-center items-center active:text-[#FF7A00] `}
       >
         <BiHome />
         <p className="text-sm ">Home</p>
       </Link>
 
       <Link
-        href="#"
-        className="mx-2 text-slate-500 md:text-white flex flex-col justify-center items-center  "
+        href="/offer"
+        className={` ${
+          path === "/offer" ? "text-[#FF7A00] " : "text-slate-500"
+        } mx-2 md:text-white flex flex-col justify-center items-center  `}
       >
         <MdOutlineLocalOffer /> <p className="text-sm ">Offer</p>
       </Link>
 
       <Link
-        href=""
-        className="mx-2 text-slate-500 md:text-white flex flex-col justify-center items-center  "
+        href="/liked"
+        className={`${
+          path === "/liked" ? " text-[#FF7A00] " : "text-slate-500"
+        } mx-2  md:text-white flex flex-col justify-center items-center  `}
       >
         <BiHeart /> <p className="text-sm ">Liked</p>
       </Link>
 
       <Link
         href={`${isAuthenticated ? "/profile" : "/login"}`}
-        className="mx-2 text-slate-500 md:text-white flex flex-col justify-center items-center  "
+        className={`${
+          path === "/profile" || "/profile/changepassword"
+            ? " text-[#FF7A00] "
+            : "text-slate-500"
+        }  mx-2  md:text-white flex flex-col justify-center items-center  `}
       >
         {isAuthenticated ? <MdOutlineAccountCircle /> : <BiLogInCircle />}{" "}
         <p className="text-sm ">{isAuthenticated ? "Account" : "Login"}</p>
