@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
+
 import { AiFillEdit, AiTwotoneHeart } from "react-icons/ai";
 import { MdDashboard, MdPerson } from "react-icons/md";
 
@@ -16,6 +20,9 @@ interface Props {
 }
 
 const ProfileNave: React.FC<Props> = ({ user }) => {
+  const path = usePathname();
+  const purl = "/profile";
+
   return (
     <div className="flex flex-col h-fit  font-semibold text-lg items-center-justify-center bg-white rounded-md shadow-md p-6">
       <div className=" flex flex-col mb-4">
@@ -37,7 +44,10 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
           </Link>
         </li>
         <li className="hover:underline ">
-          <Link href="/profile/changepassword">
+          <Link
+            href="/profile"
+            className={`${purl === path ? "underline" : ""}`}
+          >
             <MdPerson className="inline mr-2" /> Personal Information
           </Link>
         </li>
