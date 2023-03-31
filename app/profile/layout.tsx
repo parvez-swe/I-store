@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <main className="flex flex-col bg-slate-100 md:flex-row">
-      <div className="m-5">
+      <div className="mx-2 my-3 md:m-5">
         <ProfileNave
           user={{
             name: "Parvez Musharaf",
@@ -25,7 +25,7 @@ export default function RootLayout({
           }}
         />
       </div>
-      <div className="flex items-center first-letter justify-center flex-1  m-5">
+      <div className="flex items-center first-letter justify-center flex-1 mx-2 my-3 md:m-5">
         {children}
       </div>
     </main>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const OrderCart = () => {
   return (
-    <div className="flex justify-between min-w-[330px] px-5 py-3 bg-slate-100 my-3 rounded hover:shadow-lg transition-all duration-500 cursor-pointer">
+    <div className="flex justify-between min-w-[330px px-2 md:px-5 py-3 bg-slate-100 my-3 rounded hover:shadow-lg transition-all duration-500 cursor-pointer">
       <Link href="/profile/orders/id" className="flex flex-row ">
         <p className="mr-5">৳ 500</p>
         <p className=" w-[120px]  line-clamp-1">

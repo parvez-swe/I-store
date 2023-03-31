@@ -13,11 +13,11 @@ interface Props {
 
 const OrdersTable: React.FC<Props> = ({ orders }) => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto text-sm md:text-lg ">
       <table className="table-auto w-full">
         <thead>
           <tr className="text-left text-gray-500">
-            <th className="px-4 py-2">#</th>
+            <th className="px-4 py-2">#ID</th>
             <th className="px-4 py-2">Customer Name</th>
             <th className="px-4 py-2">Address</th>
             <th className="px-4 py-2">Total</th>

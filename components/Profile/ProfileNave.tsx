@@ -25,7 +25,7 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
   const isAuthenticated = false;
 
   return (
-    <div className="flex flex-col h-fit  font-semibold text-lg items-center-justify-center bg-white rounded-md shadow-md p-6">
+    <div className="flex flex-col h-fit min-w-[280px] font-semibold text-lg items-center-justify-center bg-white rounded shadow-md p-6">
       <div className=" flex flex-col mb-4">
         <Image
           width={150}
@@ -33,7 +33,7 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
           src={user.profileImageUrl}
           alt="Profile Image"
         />
-        <button className="text-start text-white bg-green-500 px-4 py-1 w-fit my-2">
+        <button className="text-start text-sm text-white bg-green-500 px-4 py-1 w-fit my-2">
           Change Prfile <AiFillEdit className="inline " />
         </button>
       </div>
