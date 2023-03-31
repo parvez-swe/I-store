@@ -2,9 +2,9 @@
 import React from "react";
 import Profile from "@/components/Profile/Profile";
 
-const page = () => {
+const page: any = () => {
   return (
-    <div>
+    <div className="flex-1  ">
       <Profile
         user={{
           name: "Parvez Musharaf",
