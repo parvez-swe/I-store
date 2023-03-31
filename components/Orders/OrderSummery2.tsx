@@ -1,9 +1,18 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
-const OrderSummery = ({ conbtn }) => {
+const OrderSummery2 = () => {
+  const [paymentMethod, setPaymentMehtod] = useState(false);
+
+  const gotoPaymentHandler = () => {
+    setPaymentMehtod(true);
+  };
+
+  const isAuthenticated = true;
+
   return (
-    <div className="bg-white p-5 m-2 min-w-[320px]">
+    <div className="bg-slate-50 shadow p-5 m-2 min-w-[320px]">
       <h1 className="text-2xl ">Order Summary</h1>
       <div className="flex justify-between">
         <p className="text-slate-500">Subtotal (2items)</p> <p>৳ 11,55</p>
@@ -17,13 +26,12 @@ const OrderSummery = ({ conbtn }) => {
       <div className="flex justify-between">
         <p className="">Total</p> <p className="text-orange-500">৳ 1255</p>
       </div>
-      <Link href={`${conbtn ? "/cart/checkout/success" : "/cart/checkout"}`}>
-        <button className="bg-orange-600 w-full mt-3 text-white py-2 text-lg hover:bg-orange-500">
-          {conbtn ? "Confirm Order" : "Proceed To Checkout"}
-        </button>
-      </Link>
+
+      <button className="bg-green-500 w-full mt-3 text-white py-2 text-lg hover:bg-orange-500">
+        Paid
+      </button>
     </div>
   );
 };
 
-export default OrderSummery;
+export default OrderSummery2;

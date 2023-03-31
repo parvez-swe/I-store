@@ -7,7 +7,7 @@ const images = ["/slides/1.webp", "/slides/2.webp", "/slides/3.webp"];
 
 const page = () => {
   return (
-    <div className="min-h-[68vh] bg-[#F2F4F8]  px-[10px] md:px-[20px] lg:px-[10%]">
+    <div className="min-h-screen bg-[#F2F4F8]  px-[10px] md:px-[20px] lg:px-[10%]">
       <Slider images={images} autoplay={3000} h={250} />
       <FeatureCategory />
       <FeatureProduct />

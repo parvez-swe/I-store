@@ -19,7 +19,9 @@ const DownBar = () => {
         href="/"
         className={`${
           path === "/" ? "text-[#FF7A00] " : "text-slate-500"
-        } mx-2  md:text-white flex flex-col justify-center items-center active:text-[#FF7A00] `}
+        } mx-2  md:text-${
+          path === "/" ? "[#FF7A00]" : "white"
+        } flex flex-col justify-center items-center active:text-[#FF7A00] `}
       >
         <BiHome />
         <p className="text-sm ">Home</p>
@@ -29,7 +31,9 @@ const DownBar = () => {
         href="/offer"
         className={` ${
           path === "/offer" ? "text-[#FF7A00] " : "text-slate-500"
-        } mx-2 md:text-white flex flex-col justify-center items-center  `}
+        } mx-2 md:text-${
+          path === "/offer" ? "[#FF7A00]" : "white"
+        } flex flex-col justify-center items-center  `}
       >
         <MdOutlineLocalOffer /> <p className="text-sm ">Offer</p>
       </Link>
@@ -37,8 +41,10 @@ const DownBar = () => {
       <Link
         href="/liked"
         className={`${
-          path === "/liked" ? " text-[#FF7A00] " : "text-slate-500"
-        } mx-2  md:text-white flex flex-col justify-center items-center  `}
+          path === "/profile/liked" ? " text-[#FF7A00] " : "text-slate-500"
+        } mx-2  md:text-${
+          path === "/profile/liked" ? "[#FF7A00]" : "white"
+        } flex flex-col justify-center items-center  `}
       >
         <BiHeart /> <p className="text-sm ">Liked</p>
       </Link>
@@ -46,10 +52,12 @@ const DownBar = () => {
       <Link
         href={`${isAuthenticated ? "/profile" : "/login"}`}
         className={`${
-          path === "/profile" || "/profile/changepassword"
-            ? " text-[#FF7A00] "
-            : "text-slate-500"
-        }  mx-2  md:text-white flex flex-col justify-center items-center  `}
+          path === "/profile"
+            ? " text-[#FF7A00] md:text-[#FF7A00]"
+            : "text-slate-500 md:text-white"
+        }  mx-2  md:text-${
+          path === "/profile" ? "[#FF7A00]" : "white"
+        } flex flex-col justify-center items-center  `}
       >
         {isAuthenticated ? <MdOutlineAccountCircle /> : <BiLogInCircle />}{" "}
         <p className="text-sm ">{isAuthenticated ? "Account" : "Login"}</p>
@@ -57,12 +65,14 @@ const DownBar = () => {
 
       <Link
         href="/cart"
-        className="flex items-center pl-2 pr-1 py-1 text-white rounded-l-3xl -translate-y-4 bg-gradient-to-r from-[#FFB800] to-[#FF7A00] md:bg-none md:translate-y-0"
+        className={`flex items-center pl-2 pr-1 py-1 text-white  md:text-${
+          path === "/cart" ? "[#FF7A00]" : "white"
+        } rounded-l-3xl -translate-y-4 bg-gradient-to-r from-[#FFB800] to-[#FF7A00] md:bg-none md:translate-y-0`}
       >
-        <BsCart3 />
+        <BsCart3 className={`md:text-2xl`} />
         <div className="ml-1 px-[2px]">
           <h1 className="text-sm">$55{/*cartQuantity*/}</h1>
-          <p className="text-sm text-slate-100">{cartQuantity} items</p>
+          <p className="text-sm ">{cartQuantity} items</p>
         </div>
       </Link>
     </>

@@ -35,16 +35,6 @@ const PaymentMethod: React.FC = () => {
           />
           <label htmlFor="paypal">PayPal</label>
         </div>
-        <div>
-          <input
-            type="radio"
-            id="bitcoin"
-            name="payment-method"
-            value="bitcoin"
-            onChange={handlePaymentMethodChange}
-          />
-          <label htmlFor="bitcoin">Bitcoin</label>
-        </div>
       </form>
 
       {paymentMethod && (

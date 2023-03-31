@@ -4,7 +4,7 @@ import Profile from "@/components/Profile/Profile";
 
 const page: any = () => {
   return (
-    <div className="flex-1  ">
+    <div className="flex-1 min-h-screen ">
       <Profile
         user={{
           name: "Parvez Musharaf",

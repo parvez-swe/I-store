@@ -12,11 +12,11 @@ const ChoosePaymentMethodPage = () => {
   //   router.push("/new-page");
   // };
 
-  const handlePaymentMethodChange = (event) => {
+  const handlePaymentMethodChange = (event: any) => {
     setPaymentMethod(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: any) => {
     event.preventDefault();
     console.log(`Payment method selected: ${paymentMethod}`);
     router.push("/");
