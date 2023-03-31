@@ -4,11 +4,15 @@ import { useState } from "react";
 
 const SignupPage = () => {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [division, setDivision] = useState("");
+  const [district, setDistrict] = useState("");
+
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSignup = (event) => {
+  const handleSignup = (event: any) => {
     event.preventDefault();
 
     if (password !== confirmPassword) {
@@ -20,10 +24,25 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-[100vh] py-10 bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-8 text-center">Sign Up</h2>
         <form onSubmit={handleSignup}>
+          <div className="mb-4">
+            <label htmlFor="name" className="block font-medium mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              className="border border-gray-400 p-2 w-full rounded outline-none"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
           <div className="mb-4">
             <label htmlFor="email" className="block font-medium mb-2">
               Email
@@ -39,6 +58,37 @@ const SignupPage = () => {
               required
             />
           </div>
+          <div className="mb-4">
+            <label htmlFor="division" className="block font-medium mb-2">
+              Division
+            </label>
+            <input
+              type="text"
+              id="division"
+              name="division"
+              placeholder="Divison"
+              className="border border-gray-400 p-2 w-full rounded outline-none"
+              value={district}
+              onChange={(e) => setDistrict(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="district" className="block font-medium mb-2">
+              District
+            </label>
+            <input
+              type="text"
+              id="district"
+              name="district"
+              placeholder="Distirct"
+              className="border border-gray-400 p-2 w-full rounded outline-none"
+              value={district}
+              onChange={(e) => setDistrict(e.target.value)}
+              required
+            />
+          </div>
+
           <div className="mb-4">
             <label htmlFor="password" className="block font-medium mb-2">
               Password

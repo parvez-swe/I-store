@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { BiHome, BiCategory, BiHeart, BiLogInCircle } from "react-icons/bi";
-import { MdOutlineAccountCircle } from "react-icons/md";
+import { MdOutlineAccountCircle, MdOutlineLocalOffer } from "react-icons/md";
 import { BsCart3 } from "react-icons/bs";
 
 const DownBar = () => {
@@ -24,7 +24,7 @@ const DownBar = () => {
         href="#"
         className="mx-2 text-slate-500 md:text-white flex flex-col justify-center items-center  "
       >
-        <BiCategory /> <p className="text-sm ">Category</p>
+        <MdOutlineLocalOffer /> <p className="text-sm ">Offer</p>
       </Link>
 
       <Link
