@@ -39,7 +39,7 @@ const DownBar = () => {
       </Link>
 
       <Link
-        href="/liked"
+        href="profile/liked"
         className={`${
           path === "/profile/liked" ? " text-[#FF7A00] " : "text-slate-500"
         } mx-2  md:text-${

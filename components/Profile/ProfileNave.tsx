@@ -26,15 +26,17 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
 
   return (
     <div className="flex flex-col h-fit min-w-[280px] font-semibold text-lg items-center-justify-center bg-white rounded shadow-md p-6">
-      <div className=" flex flex-col mb-4">
+      <div className=" flex flex-col mb-4 relative">
         <Image
+          className="w-full"
           width={150}
           height={150}
           src={user.profileImageUrl}
           alt="Profile Image"
         />
-        <button className="text-start text-sm text-white bg-green-500 px-4 py-1 w-fit my-2">
-          Change Prfile <AiFillEdit className="inline " />
+        <button className="text-center text-sm text-slate-700 hover:text-slate-900  bg-slate-100 absolute top-0 right-0 -translate-y-1 py-1 px-2  aspect-square rounded-full w-fit my-2">
+          {/* <button className=" inline-block text-sm  rounded-full bg-green-400"> */}
+          <AiFillEdit className="inline text-center" />
         </button>
       </div>
       <ul className="">
