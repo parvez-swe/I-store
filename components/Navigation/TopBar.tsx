@@ -24,7 +24,7 @@ const TopBar = () => {
   const path = usePathname();
   return (
     <>
-      <div className="Navbar z-10 sticky top-0 px-[10px] md:px-[20px] lg:px-[10%] bg-[#081621] flex flex-row justify-between h-16 items-center pl-2">
+      <div className="Navbar z-50 sticky top-0 px-[10px] md:px-[20px] lg:px-[10%] bg-[#081621] flex flex-row justify-between h-16 items-center pl-2">
         <div className="md:px-0 flex-1 flex flex-row ">
           <Link
             className="text-white uppercase text-xl font-bold whitespace-nowrap "

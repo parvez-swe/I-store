@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillEdit, AiTwotoneHeart } from "react-icons/ai";
 import { MdDashboard, MdPerson } from "react-icons/md";
-// import { User } from "../types";
+
+import { useState } from "react";
 
 interface User {
   name: string;
@@ -31,6 +32,7 @@ const Profile: React.FC<Props> = ({ user }) => {
             >
               <AiFillEdit className="inline " />
             </Link>
+
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">
               {user.name}
             </h2>
