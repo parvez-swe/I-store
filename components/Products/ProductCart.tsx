@@ -8,7 +8,7 @@ import React from "react";
 const ProductCart = ({ name, id, price, image, description }: any) => {
   return (
     <div className="flex flex-col relative  m-[8px] md:m-5 font-sans shadow-sm hover:shadow-lg bg-gray-50 rounded-lg min-w-[200px]n max-w-[220px] overflow-hidden">
-      <Link className="pb-16 px-2" href={`/products/${id}`}>
+      <Link className="pb-16" href={`/products/${id}`}>
         <div className="flex overflow-hidden justify-center items-center w-[100%] relativ">
           <img
             src={image[0]}
@@ -17,7 +17,7 @@ const ProductCart = ({ name, id, price, image, description }: any) => {
             loading="lazy"
           />
         </div>
-        <div className="flex justify-between px-1">
+        <div className="flex justify-between   px-2">
           <div>
             <div className="w-full flex-none text-sm font-medium text-green-600 mt-2">
               In stock
