@@ -77,14 +77,14 @@ const TopBar = () => {
             </button>
           </Link> */}
 
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             {!showNav && (
               <MdMenu
                 onClick={NavToggleHandler}
                 className="text-2xl text-white cursor-pointer"
               />
             )}
-          </div>
+          </div> */}
         </div>
       </div>
 

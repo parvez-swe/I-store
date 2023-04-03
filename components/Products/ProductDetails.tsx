@@ -8,21 +8,25 @@ import { AiFillLike, AiOutlineLike } from "react-icons/ai";
 import Slider from "@/components/Slider/Slider";
 import DetailsSlider from "../Slider/DetailsSlider";
 
-const ProuductDetails = ({ products }: any) => {
+import { products } from "../ProductData";
+
+const ProuductDetails = ({ id }: any) => {
+  const product: any = products.filter((product) => product.id === id);
+  console.log(product);
   return (
     <div className="flex flex-col">
       <div className="  px-[10px] md:px-[15px] lg:px-[8vw] pt-10 mb-10 ">
         <div className=" grid grid-cols-1 pb-20 md:grid-cols-2">
           <div className="bg-white mb-10 rounded-b-xl ">
             <div className="w-[100%] flex justify-center">
-              <DetailsSlider images={products[0].image} h={350} />
+              <DetailsSlider images={product[0].image} h={350} />
             </div>
           </div>
 
           {/* Key Feature */}
           <div>
             <div className="px-3 md:ml-10">
-              <p className="text-lg font-bold my-2">{products[0].name}</p>
+              <p className="text-lg font-bold my-2">{product.name}</p>
               <div className="flex flex-row justify-between mx-2 my-4">
                 <div className="flex ">
                   <BsStarFill className="text-[#FF7A00]" />
@@ -35,7 +39,7 @@ const ProuductDetails = ({ products }: any) => {
               </div>
               <h1 className="text-2xl mb-3 ">key Feature</h1>
               <div>
-                {products[0].keyFeature?.map((feature: any) => (
+                {product.keyFeature?.map((feature: any) => (
                   <li key={feature}>{feature}</li>
                 ))}
               </div>

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
-import { products } from "../ProductData";
 import ProductCart from "./ProductCart";
+import { products } from "../ProductData";
 
 const FeatureProduct = () => {
   return (
@@ -10,9 +10,11 @@ const FeatureProduct = () => {
       <div className=" grid grid-cols-2 place-items-center md:flex flex-row flex-wrap justify-center">
         {products.map((product) => (
           <ProductCart
+            key={product.id}
             name={product.name}
             image={product.image}
             price={product.price}
+            id={product.id}
           />
         ))}
       </div>
