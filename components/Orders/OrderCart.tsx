@@ -4,8 +4,8 @@ import { MdDelete, MdEdit } from "react-icons/md";
 import { FaProcedures } from "react-icons/fa";
 import Link from "next/link";
 
-const OrderCart = () => {
-  const isAdmin = false;
+const OrderCart = ({ isAdmin }: any) => {
+  // const isAdmin = false;
 
   return (
     <div className="flex justify-between min-w-[330px px-2 md:px-5 py-3 bg-slate-100 my-3 rounded hover:shadow-lg transition-all duration-500 cursor-pointer">
