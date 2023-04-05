@@ -35,18 +35,20 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
   const [imageSrc, setImageSrc] = useState(user.profileImageUrl);
 
   return (
-    <div className="flex flex-col h-fit min-w-[280px] font-semibold  items-center-justify-center bg-white rounded shadow-md p-6">
+    <div className="flex flex-col h-fit min-w-[280px] font-semibold  items-center-justify-center bg-white rounded shadow-md relative pt-6">
       {uploader && (
-        <div className="absolute z-40">
+        <div className="absolute z-40 w-full flex m-auto">
           <UploadImageModal
             setUploader={setUploader}
             setImageSrc={setImageSrc}
             imageSrc={imageSrc}
+            name={user.name}
+            email={user.email}
           />
         </div>
       )}
 
-      <div className="self-center ">
+      <div className="self-center px-6">
         <div className=" flex flex-col self-center h-40 w-40 rounded-[100%] overflow-hidden  relative">
           <Image
             className="w-full z-10  "
@@ -67,7 +69,7 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
       </div>
       <hr className="mb-10 mt-2"></hr>
 
-      <ul className="text-lg text-slate-800">
+      <ul className="text-lg text-slate-800 px-6 pb-5">
         <li className="hover:underline ">
           {isAdmin ? (
             <Link

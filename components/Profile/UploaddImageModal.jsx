@@ -1,10 +1,14 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import { MdClose } from "react-icons/md";
 
 export default function UploadImageModal({
   setUploader,
   setImageSrc,
   imageSrc,
+  name,
+  email,
 }) {
   const [uploadData, setUploadData] = useState();
 
@@ -60,8 +64,26 @@ export default function UploadImageModal({
   }
 
   return (
-    <div className="bg-slate-200 w-fit">
-      <main className="">
+    <div className="bg-slate-200 pt-6 relative max-w-[300px] self-center">
+      <MdClose
+        onClick={() => setUploader(false)}
+        className="text-red-600 absolute text-xl right-1 top-1 cursor-pointer"
+      />
+      <main className="flex flex-col items-center">
+        <div className="self-center mb-5 ">
+          <div className=" flex flex-col self-center h-40 w-40 rounded-[100%] overflow-hidden  relative">
+            <Image
+              className="w-full z-10  "
+              width={150}
+              height={100}
+              src={imageSrc}
+              alt="Profile Image"
+            />
+          </div>
+          <h1 className="text-center text-lg">{name}</h1>
+          <p className="text-center text-slate-700">{email}</p>
+        </div>
+
         <form
           className=""
           method="post"
@@ -72,8 +94,8 @@ export default function UploadImageModal({
             <input type="file" name="file" />
           </p>
           {imageSrc && !uploadData && (
-            <p className="">
-              <button className="border-green-400 border-solid hover:bg-green-500 hover:text-white px-2 py-1 m-1 ">
+            <p className="flex flex-col">
+              <button className="border-green-400 border-solid text-center my-5 bg-green-500 hover:text-white px-2 py-1 m-1 ">
                 Upload Files
               </button>
             </p>

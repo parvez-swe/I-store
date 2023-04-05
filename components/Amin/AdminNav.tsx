@@ -14,13 +14,11 @@ const navItem = [
 const AdminNav = () => {
   const path = usePathname();
   return (
-    <ul className="flex flex-row  mx-1 lg:[&>*]:mx-5 text-sm lg:text-lg">
+    <ul className="flex flex-row flex-wrap  mx-1 lg:[&>*]:mx-5 text-sm lg:text-lg">
       {navItem.map((item) => (
         <li
           key={item.name}
-          className={`${
-            item.url === path ? "text-red-500" : ""
-          }px-2 uppercase whitespace-nowrap hover:text-slate-300 cursor-pointer`}
+          className={`px-2 py-1 uppercase whitespace-nowrap hover:text-slate-300 text-sm cursor-pointer`}
         >
           <Link
             href={item.url}

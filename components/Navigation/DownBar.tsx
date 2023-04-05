@@ -19,7 +19,7 @@ const DownBar = () => {
         href="/"
         className={`${
           path === "/" ? "text-[#FF7A00] " : "text-slate-500"
-        } mx-2  md:text-${
+        } mx-1  md:text-${
           path === "/" ? "[#FF7A00]" : "white"
         } flex flex-col justify-center items-center active:text-[#FF7A00] `}
       >
@@ -31,7 +31,7 @@ const DownBar = () => {
         href="/offer"
         className={` ${
           path === "/offer" ? "text-[#FF7A00] " : "text-slate-500"
-        } mx-2 md:text-${
+        } mx-1 md:text-${
           path === "/offer" ? "[#FF7A00]" : "white"
         } flex flex-col justify-center items-center  `}
       >
@@ -42,7 +42,7 @@ const DownBar = () => {
         href="profile/liked"
         className={`${
           path === "/profile/liked" ? " text-[#FF7A00] " : "text-slate-500"
-        } mx-2  md:text-${
+        } mx-1  md:text-${
           path === "/profile/liked" ? "[#FF7A00]" : "white"
         } flex flex-col justify-center items-center  `}
       >
@@ -55,7 +55,7 @@ const DownBar = () => {
           path === "/profile"
             ? " text-[#FF7A00] md:text-[#FF7A00]"
             : "text-slate-500 md:text-white"
-        }  mx-2  md:text-${
+        }  mx-1  md:text-${
           path === "/profile" ? "[#FF7A00]" : "white"
         } flex flex-col justify-center items-center  `}
       >

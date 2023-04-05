@@ -29,24 +29,40 @@ const AdminProductList = ({ products }: ProductListProps) => {
       <table>
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th className="px-2 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              ID
+            </th>
+            <th className="px-2 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Name
+            </th>
+            <th className="px-2 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Description
+            </th>
+            <th className="px-2 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Price
+            </th>
           </tr>
         </thead>
         <tbody>
           {products.map((product) => (
             <tr key={product.id} onClick={() => handleProductClick(product)}>
-              <td>{product.id}</td>
-              <td>{product.name}</td>
-              <td>{product.description}</td>
-              <td>${product.price}</td>
+              <td className="text-sm font-medium text-gray-900 px-2 md:px-6 py-3 border-b hover:bg-slate-50">
+                {product.id}
+              </td>
+              <td className="text-sm font-medium text-gray-900 px-2 md:px-6 py-3 border-b hover:bg-slate-50">
+                {product.name}
+              </td>
+              <td className="text-sm font-medium text-gray-900 px-2 md:px-6 py-3 border-b hover:bg-slate-50">
+                {product.description}
+              </td>
+              <td className="text-sm font-medium text-gray-900 px-2 md:px-6 py-3 border-b hover:bg-slate-50">
+                ${product.price}
+              </td>
             </tr>
           ))}
         </tbody>
       </table>
-      {selectedProduct && (
+      {/* {selectedProduct && (
         <div>
           <h3>Edit Product {selectedProduct.id}</h3>
           <form>
@@ -65,7 +81,7 @@ const AdminProductList = ({ products }: ProductListProps) => {
             <button type="submit">Save</button>
           </form>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

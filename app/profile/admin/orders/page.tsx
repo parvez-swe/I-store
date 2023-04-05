@@ -42,7 +42,7 @@ const ordersData = [
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-white mx-2">
       <OrdersTable ordersData={ordersData} />
     </div>
   );

@@ -35,7 +35,7 @@ const products = [
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-white  w-full px-2">
       <AdminProductList products={products} />
     </div>
   );
