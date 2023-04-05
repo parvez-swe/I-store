@@ -6,6 +6,7 @@ import React from "react";
 // import { useState } from "react";
 
 const ProductCart = ({ name, id, price, image, description }: any) => {
+  console.log(id);
   return (
     <div className="flex flex-col relative  m-[8px] md:m-5 font-sans shadow-sm hover:shadow-lg bg-gray-50 rounded-lg min-w-[200px]n max-w-[220px] overflow-hidden">
       <Link className="pb-16" href={`/products/${id}`}>

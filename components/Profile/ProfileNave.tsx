@@ -37,7 +37,7 @@ const ProfileNave: React.FC<Props> = ({ user }) => {
   return (
     <div className="flex flex-col h-fit min-w-[280px] font-semibold  items-center-justify-center bg-white rounded shadow-md relative pt-6">
       {uploader && (
-        <div className="absolute z-40 w-full flex m-auto">
+        <div className="absolute z-40 w-full flex ml-auto mr-auto left-0 right-0">
           <UploadImageModal
             setUploader={setUploader}
             setImageSrc={setImageSrc}

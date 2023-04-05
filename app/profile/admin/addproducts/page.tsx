@@ -1,4 +1,4 @@
-import AddNewProduct from "@/components/Amin/AddNewProduct";
+import AddNewProduct from "@/components/Admin/AddNewProduct";
 import React from "react";
 
 const page = () => {

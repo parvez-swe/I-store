@@ -11,6 +11,7 @@ const AllProducts = ({ products }: any) => {
             name={product.name}
             image={product.image}
             price={product.price}
+            id={product.id}
           />
         ))}
       </div>

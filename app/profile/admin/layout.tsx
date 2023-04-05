@@ -1,4 +1,4 @@
-import AdminNav from "@/components/Amin/AdminNav";
+import AdminNav from "@/components/Admin/AdminNav";
 
 export default function RootLayout({
   children,

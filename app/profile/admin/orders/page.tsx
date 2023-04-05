@@ -1,5 +1,5 @@
 // import OrdersTable from "@/components/Orders/InfoTable";
-import OrdersTable from "@/components/Amin/OrdersTable";
+import OrdersTable from "@/components/Admin/OrdersTable";
 import React from "react";
 
 const ordersData = [

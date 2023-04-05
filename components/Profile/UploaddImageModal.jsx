@@ -64,7 +64,7 @@ export default function UploadImageModal({
   }
 
   return (
-    <div className="bg-slate-200 pt-6 relative max-w-[300px] self-center">
+    <div className="bg-slate-200 pt-6 relative max-w-[280px] self-center">
       <MdClose
         onClick={() => setUploader(false)}
         className="text-red-600 absolute text-xl right-1 top-1 cursor-pointer"
@@ -101,11 +101,11 @@ export default function UploadImageModal({
             </p>
           )}
 
-          {uploadData && (
+          {/* {uploadData && (
             <code>
               <pre>{JSON.stringify(uploadData, null, 2)}</pre>
             </code>
-          )}
+          )} */}
         </form>
       </main>
     </div>

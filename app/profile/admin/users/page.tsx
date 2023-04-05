@@ -1,4 +1,4 @@
-import UserList from "@/components/Amin/UserList";
+import UserList from "@/components/Admin/UserList";
 import React from "react";
 const users = [
   {

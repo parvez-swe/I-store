@@ -1,4 +1,4 @@
-import AdminProductList from "@/components/Amin/AdminProductList";
+import AdminProductList from "@/components/Admin/AdminProductList";
 import React from "react";
 const products = [
   {
