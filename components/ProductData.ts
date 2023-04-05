@@ -1,5 +1,6 @@
 export const products = [
   {
+    category: "monitor",
     image: [
       "/products/monitor1.jpg",
       "/products/monitor11.jpg",
@@ -20,6 +21,8 @@ MSI Optix G241V E2 comes with 24" FHD (1920 x 1080) display. This is one kind of
     quantity: 5,
   },
   {
+    category: "monitor",
+
     image: [
       "/products/monitor2.jpg",
       "/products/monitor22.jpg",
@@ -34,6 +37,7 @@ MSI Optix G241V E2 comes with 24" FHD (1920 x 1080) display. This is one kind of
     quantity: 5,
   },
   {
+    category: "monitor",
     image: [
       "/products/monitor3.webp",
       "/products/monitor33.webp",
@@ -48,6 +52,8 @@ MSI Optix G241V E2 comes with 24" FHD (1920 x 1080) display. This is one kind of
     quantity: 5,
   },
   {
+    category: "mobile",
+
     image: ["/products/mobile1.webp", "/products/mobile11.webp"],
     name: "Motorola Moto G31 Smartphone (6/128GB)",
     id: "ser3ser34",
@@ -74,6 +80,8 @@ In Bangladesh, you can get the original Motorola Moto G31 From Star Tech. We hav
     quantity: 5,
   },
   {
+    category: "laptop",
+
     image: [
       "/products/laptop1.webp",
       "/products/laptop11.webp",
@@ -92,6 +100,8 @@ In Bangladesh, you can get the original Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" 
     quantity: 5,
   },
   {
+    category: "watch",
+
     image: [
       "/products/watch1.webp",
       "/products/watch11.webp",

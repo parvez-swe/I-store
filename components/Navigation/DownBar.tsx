@@ -10,8 +10,7 @@ const DownBar = () => {
   const isAuthenticated = true;
   const cartQuantity = 15;
   const path = usePathname();
-  const urls = "/";
-  const orls = "/offer";
+
   return (
     // <div className="fixed bottom-0 w-[100%] h-14 bg-white flex  justify-between items-center rounded-t-2xl text-2xl z-20 ">
     <>
@@ -28,14 +27,14 @@ const DownBar = () => {
       </Link>
 
       <Link
-        href="/offer"
+        href="/products"
         className={` ${
-          path === "/offer" ? "text-[#FF7A00] " : "text-slate-500"
+          path === "/products" ? "text-[#FF7A00] " : "text-slate-500"
         } mx-1 md:text-${
-          path === "/offer" ? "[#FF7A00]" : "white"
+          path === "/products" ? "[#FF7A00]" : "white"
         } flex flex-col justify-center items-center  `}
       >
-        <MdOutlineLocalOffer /> <p className="text-sm ">Offer</p>
+        <MdOutlineLocalOffer /> <p className="text-sm ">All Products</p>
       </Link>
 
       <Link

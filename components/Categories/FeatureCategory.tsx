@@ -5,18 +5,23 @@ import { AiOutlineDesktop, AiOutlineMobile } from "react-icons/ai";
 import { BsSmartwatch } from "react-icons/bs";
 const category = [
   {
+    url: "/products/mobile",
     title: "Mobile",
     icon: <AiOutlineMobile />,
   },
   {
+    url: "/products/watch",
+
     title: "Smart Watch",
     icon: <BsSmartwatch />,
   },
   {
-    title: "Desktop",
+    url: "/products/monitor",
+    title: "Monitor",
     icon: <AiOutlineDesktop />,
   },
   {
+    url: "/products/laptop",
     title: "Laptop",
     icon: <MdLaptop />,
   },
@@ -30,7 +35,12 @@ const FeatureCategory = () => {
       </h1>
       <div className="flex flex-row flex-wrap items-center justify-center">
         {category.map((cat) => (
-          <CategoryCart key={cat.title} name={cat.title} icon={cat.icon} />
+          <CategoryCart
+            key={cat.title}
+            name={cat.title}
+            icon={cat.icon}
+            url={cat.url}
+          />
         ))}
       </div>
     </>
