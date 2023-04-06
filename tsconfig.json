@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/Profile/UploaddImageModal.jsx"
+    "components/Profile/UploaddImageModal.jsx",
+    "utils/mongodb.js"
   ],
   "exclude": ["node_modules"]
 }
